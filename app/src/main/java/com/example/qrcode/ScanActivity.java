@@ -16,10 +16,14 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mScannerView = new ZXingScannerView(this);
-        setContentView(mScannerView);
+//        mScannerView = new ZXingScannerView(this);
+//        setContentView(mScannerView);
 
 //        setContentView(R.layout.activity_scan);
+
+        //自訂view 更改縣市照相功能的頁面
+        setContentView(R.layout.activity_scan);
+        mScannerView =findViewById(R.id.scanner);
     }
     //開始拍照做的事
     @Override
